@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 配置允许struts2能访问静态属性 -->
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	<!-- 热部署 -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 118N文件加载 -->
+	<constant name="struts.custom.i18n.resources" value="i18n" />
+	<!-- 指定spring负责action对象的创建 -->
+	<constant name="struts.objectFactory" value="spring" />
+	<!-- 所有匹配*.action请求都由struts2处理 -->
+	<constant name="struts.action.extension" value="action" />
+	<!-- struts配置文件改动后,是否重新加载 -->
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<!-- 设置浏览器是否缓存静态内容 -->
+	<constant name="struts.serve.static.browserCache" value="false" />
+	<!-- 请求参数的编码方式 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<!-- 每次HTTP请求系统都重新加载资源文件,有助于开发 -->
+	<constant name="struts.i18n.reload" value="true" />
+
+	<package name="basePackage" extends="struts-default">
+
+	</package>
+</struts>
